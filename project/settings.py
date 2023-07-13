@@ -32,6 +32,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+         
+         
+    'accounts',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,7 +45,7 @@ INSTALLED_APPS = [
     'home', 
     'blog',
      'contact',
-     'accounts',
+     'bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -60,6 +63,7 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': ['templates'], 
         'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
